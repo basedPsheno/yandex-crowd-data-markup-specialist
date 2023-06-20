@@ -130,7 +130,7 @@
 - [ ] //H3/UL[@id='messages']/LI[contains(.,'Сообщение 1')]
 - [ ] нет правильного варианта
  
-6. Напишите Xpath до элемента, содержащего текст "Сообщение 1".
+7. Напишите Xpath для всех текстовых элементов, содержащих "Сообщение".
 ```html
 <input type="checkbox">
 <input type="checkbox" checked>
@@ -149,13 +149,13 @@
 <a href="http://site.com/list.zip">Ссылка на архив</a>
 <a href="http://site.com/list.pdf">..И на PDF</a>
 ```
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [ ] //LI[contains(.,'message')]/text()
+- [ ] //text()[contains(.,'Сообщение *')]
+- [x] //text()[contains(.,'Сообщение')]
+- [ ] //*[contains(./text(),'Сообщение')]
+- [ ] нет правильного варианта
 
-6. Напишите Xpath до элемента, содержащего текст "Сообщение 1".
+8. Напишите Xpath для всех элементов у которых ЕСТЬ атрибут data-action, и он НЕ содержит edit.
 ```html
 <input type="checkbox">
 <input type="checkbox" checked>
@@ -174,13 +174,13 @@
 <a href="http://site.com/list.zip">Ссылка на архив</a>
 <a href="http://site.com/list.pdf">..И на PDF</a>
 ```
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [x] //@data-action[not(contains(.,'edit'))]/..
+- [ ] //data-action()[not(contains(.,'edit'))]/..
+- [x] //*[./@data-action and not(contains(./@data-action,'edit'))]
+- [ ] //@data-action[not(contains(.,'edit'))]
+- [ ] нет правильного варианта
 
-6. Напишите Xpath до элемента, содержащего текст "Сообщение 1".
+9. Напишите Xpath до элемента, содержащего текст "Сообщение 1".
 ```html
 <input type="checkbox">
 <input type="checkbox" checked>
