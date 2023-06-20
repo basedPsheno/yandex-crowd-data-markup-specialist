@@ -105,6 +105,133 @@
 - [ ] //*[length(name()) > 3]
 - [ ] нет правильного варианта
 
+6. Напишите Xpath до элемента, содержащего текст "Сообщение 1".
+```html
+<input type="checkbox">
+<input type="checkbox" checked>
+<input type="text" id="message">
+
+<h3 id="widget-title">Сообщения:</h3>
+<ul id="messages">
+    <li id="message-1">Сообщение 1</li>
+    <li id="message-2">Сообщение 2</li>
+    <li id="message-3" data-action="delete">Сообщение 3</li>
+    <li id="message-4" data-action="edit do-not-delete">Сообщение 4</li>
+    <li id="message-5" data-action="edit delete">Сообщение 5</li>
+    <li><a href="#">...</a></li>
+</ul>
+
+<a href="http://site.com/list.zip">Ссылка на архив</a>
+<a href="http://site.com/list.pdf">..И на PDF</a>
+```
+- [ ] //UL[@id='messages']/LI[contains(.,'Сообщение 1')]/LI[1]
+- [x] //UL[@id='messages']/LI[contains(.,'Сообщение 1')]
+- [ ] //*[contains(./text(),'Сообщение 1')]
+- [ ] //H3/UL[@id='messages']/LI[contains(.,'Сообщение 1')]
+- [ ] нет правильного варианта
+ 
+6. Напишите Xpath до элемента, содержащего текст "Сообщение 1".
+```html
+<input type="checkbox">
+<input type="checkbox" checked>
+<input type="text" id="message">
+
+<h3 id="widget-title">Сообщения:</h3>
+<ul id="messages">
+    <li id="message-1">Сообщение 1</li>
+    <li id="message-2">Сообщение 2</li>
+    <li id="message-3" data-action="delete">Сообщение 3</li>
+    <li id="message-4" data-action="edit do-not-delete">Сообщение 4</li>
+    <li id="message-5" data-action="edit delete">Сообщение 5</li>
+    <li><a href="#">...</a></li>
+</ul>
+
+<a href="http://site.com/list.zip">Ссылка на архив</a>
+<a href="http://site.com/list.pdf">..И на PDF</a>
+```
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+
+6. Напишите Xpath до элемента, содержащего текст "Сообщение 1".
+```html
+<input type="checkbox">
+<input type="checkbox" checked>
+<input type="text" id="message">
+
+<h3 id="widget-title">Сообщения:</h3>
+<ul id="messages">
+    <li id="message-1">Сообщение 1</li>
+    <li id="message-2">Сообщение 2</li>
+    <li id="message-3" data-action="delete">Сообщение 3</li>
+    <li id="message-4" data-action="edit do-not-delete">Сообщение 4</li>
+    <li id="message-5" data-action="edit delete">Сообщение 5</li>
+    <li><a href="#">...</a></li>
+</ul>
+
+<a href="http://site.com/list.zip">Ссылка на архив</a>
+<a href="http://site.com/list.pdf">..И на PDF</a>
+```
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+
+6. Напишите Xpath до элемента, содержащего текст "Сообщение 1".
+```html
+<input type="checkbox">
+<input type="checkbox" checked>
+<input type="text" id="message">
+
+<h3 id="widget-title">Сообщения:</h3>
+<ul id="messages">
+    <li id="message-1">Сообщение 1</li>
+    <li id="message-2">Сообщение 2</li>
+    <li id="message-3" data-action="delete">Сообщение 3</li>
+    <li id="message-4" data-action="edit do-not-delete">Сообщение 4</li>
+    <li id="message-5" data-action="edit delete">Сообщение 5</li>
+    <li><a href="#">...</a></li>
+</ul>
+
+<a href="http://site.com/list.zip">Ссылка на архив</a>
+<a href="http://site.com/list.pdf">..И на PDF</a>
+```
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+
+6. Напишите Xpath до элемента, содержащего текст "Сообщение 1".
+```html
+<input type="checkbox">
+<input type="checkbox" checked>
+<input type="text" id="message">
+
+<h3 id="widget-title">Сообщения:</h3>
+<ul id="messages">
+    <li id="message-1">Сообщение 1</li>
+    <li id="message-2">Сообщение 2</li>
+    <li id="message-3" data-action="delete">Сообщение 3</li>
+    <li id="message-4" data-action="edit do-not-delete">Сообщение 4</li>
+    <li id="message-5" data-action="edit delete">Сообщение 5</li>
+    <li><a href="#">...</a></li>
+</ul>
+
+<a href="http://site.com/list.zip">Ссылка на архив</a>
+<a href="http://site.com/list.pdf">..И на PDF</a>
+```
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+ 
+
+
 
 
 
