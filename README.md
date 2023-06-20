@@ -64,6 +64,49 @@
 - [ ] //BBB[not(@id)]
 - [ ] нет правильного варианта
 
+4. Выберите все элементы, имя которых содержит C.
+```xml
+<AAA> 
+    <BCC> 
+         <BBB></BBB> 
+         <BBB></BBB> 
+         <BBB></BBB> 
+    </BCC> 
+    <DDB> 
+         <BBB></BBB> 
+         <BBB></BBB> 
+    </DDB> 
+    <BEC> 
+         <CCC></CCC> 
+         <DBD></DBD> 
+    </BEC> 
+</AAA>
+```
+- [ ] //*/name()[contains('C')]
+- [x] //*[contains(name(),'C')]
+- [x] //*[contains(name(.),'C')]
+- [ ] //name()[contains('C')]
+- [ ] нет правильного варианта
+
+5. Выберите все элементы, имя которых состоит более чем из трех символов.
+```xml
+<AAA> 
+      <Q></Q> 
+      <SSSS></SSSS> 
+      <BB></BB> 
+      <CCC></CCC> 
+      <DDDDDDDD></DDDDDDDD> 
+      <EEEE></EEEE> 
+ </AAA>
+```
+- [x] //*[string-length(name()) > 3]
+- [x] //*[string-length(name(.))>3]
+- [ ] //*[position()(name()) > 3]
+- [ ] //*[length(name()) > 3]
+- [ ] нет правильного варианта
+
+
+
 
 
 
