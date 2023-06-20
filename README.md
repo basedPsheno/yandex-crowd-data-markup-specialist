@@ -180,7 +180,7 @@
 - [ ] //@data-action[not(contains(.,'edit'))]
 - [ ] нет правильного варианта
 
-9. Напишите Xpath до элемента, содержащего текст "Сообщение 1".
+9. Напишите Xpath для всех элементов у которых ЕСТЬ атрибут data-action, и он содержит edit.
 ```html
 <input type="checkbox">
 <input type="checkbox" checked>
@@ -199,13 +199,13 @@
 <a href="http://site.com/list.zip">Ссылка на архив</a>
 <a href="http://site.com/list.pdf">..И на PDF</a>
 ```
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [x] //@data-action[contains(.,'edit')]/..
+- [ ] //@data-action[contains(.,'edit')]
+- [ ] //data-action()[contains(text(),'edit')]/..
+- [x] //*[contains(./@data-action,'edit')]
+- [ ] нет правильного варианта
 
-6. Напишите Xpath до элемента, содержащего текст "Сообщение 1".
+10. Напишите Xpath до элемента, содержащего ссылки на файлы с расширением href="...zip".
 ```html
 <input type="checkbox">
 <input type="checkbox" checked>
@@ -224,11 +224,11 @@
 <a href="http://site.com/list.zip">Ссылка на архив</a>
 <a href="http://site.com/list.pdf">..И на PDF</a>
 ```
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [x] //@href[contains(.,'zip')]/..
+- [ ] //A[contains(@href,'zip')]/..
+- [x] //A[contains(./@href , '.zip')]
+- [ ] //@href[contains(text(),'zip')]
+- [ ] нет правильного варианта
  
 
 
